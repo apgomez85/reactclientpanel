@@ -41,7 +41,7 @@ class Clients extends Component {
                     {client.firstName} {client.LastName}{' '}
                   </td>
                   <td> {client.email} </td>
-                  <td> {client.balance} </td>
+                  <td> ${parseFloat(client.balance).toFixed(2)} </td>
                   <td>
                     {' '}
                     <Link
