@@ -21,9 +21,6 @@ class Login extends Component {
     firebase
       .auth()
       .signInWithEmailAndPassword(email, password)
-      .then(user => {
-        this.props.history.push('/');
-      })
       .catch(error => alert('Invalid login credentials'));
   };
 
