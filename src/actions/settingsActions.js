@@ -7,10 +7,8 @@ import {
 export const setDisableBalanceOnAdd = () => {
   //Get settings from localStorage
   const settings = JSON.parse(localStorage.getItem('settings'));
-
   //Toggle
   settings.disableBalanceOnAdd = !settings.disableBalanceOnAdd;
-
   //Set back to loacalStorage
   localStorage.setItem('settings', JSON.stringify(settings));
 
